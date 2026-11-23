@@ -1,0 +1,24 @@
+name: validate
+on: [push, pull_request]
+jobs:
+  manifests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: JSON is valid and versions match
+        run: |
+          set -euo pipefail
+          for f in .claude-plugin/marketplace.json plugins/*/.claude-plugin/plugin.json; do jq empty "$f"; done
+          for p in $(jq -r '.plugins[].name' .claude-plugin/marketplace.json); do
+            m=$(jq -r --arg p "$p" '.plugins[] | select(.name==$p) | .version' .claude-plugin/marketplace.json)
+            v=$(jq -r .version "plugins/$p/.claude-plugin/plugin.json")
+            if [ "$m" != "$v" ]; then echo "::error::$p version mismatch: marketplace.json $m vs plugin.json $v"; exit 1; fi
+            echo "$p $v ok"
+          done
+      - name: Every skill has name and description
+        run: |
+          set -euo pipefail
+          for s in plugins/*/skills/*/SKILL.md; do
+            head -1 "$s" | grep -qx -- '---' || { echo "::error::$s missing frontmatter"; exit 1; }
+            grep -q '^name: ' "$s" && grep -q '^description: ' "$s" || { echo "::error::$s missing name/description"; exit 1; }
+          done

@@ -40,4 +40,4 @@ Skeleton (DA_MCP__da_create_source, contentType text/html):
 </main><footer></footer></body>
 ```
 
-After create: `DA_MCP__da_preview_content` (org aemxsc, repo frescopa26, path guides/<slug>.html). Return edit URL `https://da.live/canvas#/aemxsc/frescopa26/guides/<slug>` and preview `https://main--frescopa26--aemxsc.preview.da.live/guides/<slug>`. NEVER da_publish_content.
+After create: `DA_MCP__da_preview_content` (org aemxsc, repo frescopa26, path drafts/<name>/<slug>.html). Return edit URL `https://da.live/canvas#/aemxsc/frescopa26/drafts/<name>/<slug>` and preview `https://main--frescopa26--aemxsc.preview.da.live/drafts/<name>/<slug>`. Never write to `guides/`. NEVER call a publish tool.
