@@ -1,0 +1,43 @@
+{
+  "_note": "Last-known-good Stage 1 numbers for the Frescopa/Profee GEO demo. FALLBACK ONLY — render from this instantly if Semrush/ABV is slow or down on stage, and say 'live refresh pending'. Refresh before a real demo; numbers go stale. Captured 2026-11-11 (prod sandbox, db us).",
+  "captured": "2026-11-11",
+  "semrush": {
+    "domain_rank": { "domain": "frescopa.coffee", "rank": 22033713, "organic_keywords": 4, "organic_traffic": 0 },
+    "ranking_keywords": [
+      { "keyword": "fresco coffee", "position": 28, "volume": 90, "band": "Page 2-3" },
+      { "keyword": "frescante", "position": 46, "volume": 50, "band": "Page 2-3" },
+      { "keyword": "fresco coffee", "position": 51, "volume": 90, "band": "Page 3+" },
+      { "keyword": "caffe fresco coffee", "position": 52, "volume": 70, "band": "Page 3+" }
+    ],
+    "leader_scale": [
+      { "domain": "nespresso.com", "rank": 1835, "organic_keywords": 191165, "organic_traffic": 1230266 },
+      { "domain": "keurig.com", "rank": 3494, "organic_keywords": 119669, "organic_traffic": 617955 },
+      { "domain": "frescopa.coffee", "rank": 22033713, "organic_keywords": 4, "organic_traffic": 0 }
+    ]
+  },
+  "abv": {
+    "brand_presence": { "total_executions": 50, "total_mentions": 15, "total_citations": 0, "average_visibility_score": 21 },
+    "ai_visibility": { "cited_pages": 0, "citations": 0 },
+    "competitor_summary": [
+      { "name": "Nestlé", "mentions": 250, "citations": 46 },
+      { "name": "Keurig Dr Pepper", "mentions": 214, "citations": 34 },
+      { "name": "Starbucks", "mentions": 18, "citations": 7 },
+      { "name": "Peet's Coffee", "mentions": 18, "citations": 0 },
+      { "name": "Lavazza", "mentions": 10, "citations": 4 }
+    ],
+    "frescopa_self": { "name": "Frescopa", "mentions": 15, "citations": 0 },
+    "topic_coverage": [
+      { "topic": "Brewing Methods", "status": "Absent", "leaders": "Keurig, Nespresso, Lavazza, Senseo" },
+      { "topic": "Key Features to Consider", "status": "Absent", "leaders": "Keurig, Nespresso" },
+      { "topic": "Allergen & Dietary Options", "status": "Absent", "leaders": "Nespresso, Keurig, Community Coffee" },
+      { "topic": "Brewing Tips & Troubleshooting", "status": "Absent", "leaders": "Keurig, Breville, Cuisinart" },
+      { "topic": "Cleaning & Maintenance", "status": "Absent", "leaders": "Keurig, Nespresso, Ninja" },
+      { "topic": "Recycling & Sustainability", "status": "Absent", "leaders": "Keurig, Nespresso" },
+      { "topic": "Bulk Purchase Pricing", "status": "Absent", "leaders": "Nespresso, K-Cups" },
+      { "topic": "Iced Coffee Varieties", "status": "Present", "leaders": "Frescopa only" },
+      { "topic": "Pricing & Promotions", "status": "Present", "leaders": "Frescopa leads" },
+      { "topic": "Sustainable Sourcing", "status": "Present", "leaders": "Frescopa + field" }
+    ],
+    "high_popularity_topics": { "total": 14, "present": 3, "absent": 11 }
+  }
+}

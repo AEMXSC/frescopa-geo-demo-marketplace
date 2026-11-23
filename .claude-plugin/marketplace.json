@@ -1,0 +1,18 @@
+{
+  "name": "aemxsc-frescopa",
+  "owner": { "name": "AEM XSC" },
+  "metadata": {
+    "description": "AEM XSC Showcase demo plugins (Frescopa / Profee).",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "frescopa-geo-demo",
+      "source": "./plugins/frescopa-geo-demo",
+      "description": "Scripted SEO+GEO to governed-page live demo for the AEM XSC Showcase org (Frescopa / Profee): signals, draft, approve, create in Experience Workspace (preview-only).",
+      "version": "1.0.0",
+      "category": "demo",
+      "keywords": ["aem", "geo", "seo", "frescopa", "abv", "semrush", "experience-workspace"]
+    }
+  ]
+}
