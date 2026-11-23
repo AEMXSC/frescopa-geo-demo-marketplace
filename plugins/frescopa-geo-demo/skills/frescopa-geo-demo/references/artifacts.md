@@ -15,7 +15,7 @@ components:
 ```
 
 ## 2. Keyword table — TableView
-columns: keyword (isRowHeader), position (presentation number), status (presentation status with variants Page 1=positive, "Page 2-3"=notice, "Page 3+"=negative). items from resource_organic.
+columns: keyword (isRowHeader), position (presentation number), status (presentation status with variants Page 1=positive, "Page 2-3"=notice, "Page 3+"=negative). items from resource_organic. Band rule (compute in code): position 1–10 → "Page 1", 11–30 → "Page 2-3", 31+ → "Page 3+".
 
 ## 3. Keyword positions — CartesianChart
 ```

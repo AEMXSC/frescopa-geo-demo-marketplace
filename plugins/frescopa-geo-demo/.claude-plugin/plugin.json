@@ -1,7 +1,7 @@
 {
   "name": "frescopa-geo-demo",
-  "version": "1.0.0",
-  "description": "Scripted SEO+GEO to governed-page live demo for the AEM XSC Showcase org (Frescopa / Profee): signals, draft, approve, create in Experience Workspace (preview-only).",
+  "version": "1.1.0",
+  "description": "Scripted SEO+GEO to governed-page live demo for the AEM XSC Showcase org (Frescopa / Profee): signals, draft, approve, create in each presenter's drafts folder (preview-only). Includes preflight, snapshot refresh and cleanup skills.",
   "author": { "name": "AEM XSC" },
   "keywords": ["aem", "geo", "seo", "frescopa", "abv", "semrush", "experience-workspace"]
 }

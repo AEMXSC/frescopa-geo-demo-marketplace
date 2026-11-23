@@ -1,38 +1,24 @@
-# frescopa-geo-demo — plugin-ready package
+# frescopa-geo-demo
 
-Clean, plugin-ready copy of the `frescopa-geo-demo` skill (SEO+GEO → governed-page
-live demo for the AEM XSC Showcase org, Frescopa / Profee brand). Hand this folder to
-whoever owns plugin distribution for the AEM XSC Showcase org so it can be packaged into
-a plugin/manifest and published org-wide.
+Scripted SEO+GEO → governed-page live demo for the AEM XSC Showcase org (Frescopa / Profee), run from Coworker.
 
-## Contents
-- `SKILL.md` — the skill body
-- `references/artifacts.md` — validated artifact component specs
-- `references/page-template.md` — hero+blocks HTML skeleton and approved image URLs
-- `references/snapshot.json` — last-known-good signal numbers (fallback render source)
+## Skills
 
-## One open config item — MUST fill before publish
+| Skill | Use it to | Say |
+|---|---|---|
+| `frescopa-geo-demo` | Run the demo: signals → draft → approve → preview page | "Run the GEO demo", "Profee demo", "protein coffee page"… then "Save the page under drafts/<your-name>" |
+| `frescopa-demo-preflight` | Check connectors and pre-warm them, 2 minutes before going live | "Frescopa preflight" |
+| `frescopa-demo-snapshot-refresh` | Pull fresh fallback numbers into a new `snapshot.json` to commit | "Refresh the frescopa snapshot" |
+| `frescopa-demo-cleanup` | Delete your own demo pages from `drafts/<your-name>/` | "Clean up my demo pages" |
 
-The skill is written against a dedicated **Semrush MCP connector** (replacing the old
-"Project Happy Path MCP" wiring). The connector's real tool names were not available when
-this copy was prepared, so every Semrush call is parameterized behind a single token.
+## Team rules built in
+- Each presenter writes only to `drafts/<name>/` in `aemxsc/frescopa26`; never `guides/`. Existing pages are never overwritten.
+- Preview only. A person publishes in Experience Workspace.
+- If Semrush or ABV is unavailable, the demo renders from `references/snapshot.json`; say "live refresh pending".
 
-In `SKILL.md`, find the `[PLUGIN CONFIG — fill before publish]` block (Pre-resolved IDs
-section) and set:
+## Connectors (Coworker, AEM XSC Showcase org)
+Semrush, Adobe Brand Visibility (ABV), Experience Context governance, Experience Workspace (DA), plus the `visual-artifacts` skill. The skills use the default tool names (`Semrush__`, `ABV__`, `governance__`, `DA_MCP__`) and fall back to matching by tool-name suffix.
 
-- `SEMRUSH_MCP` tool prefix = the dedicated Semrush connector's tool prefix.
-  Every `SEMRUSH_MCP__<tool>` reference then resolves to `<prefix>__<tool>`
-  (e.g. `<prefix>__execute_report`, `<prefix>__get_report_schema`).
-
-The report names (`domain_rank`, `resource_organic`) and params
-(`target`, `database`, `export_columns`, …) are standard Semrush report semantics and
-should carry over unchanged; verify against the connector's `get_report_schema` once it is
-signed in.
-
-The ABV connector calls already use the `ABV__read-api` tool and need no change.
-
-## Notes for the packager
-- This is demo-run content (a scripted happy path), not a customer-data workflow.
-- IDs in `SKILL.md` (org, brand, repo, media URLs) are specific to the AEM XSC Showcase
-  org / prod sandbox — confirm they are still valid at publish time.
-- The workflow is preview-only and never publishes pages; keep that guardrail intact.
+## Maintaining
+- Keep `version` the same in `.claude-plugin/plugin.json` and the root `.claude-plugin/marketplace.json`; CI fails if they differ.
+- Approved images are still served from `main--frescopa26--markszulc.aem.live`; move them to the aemxsc site if that one changes.
