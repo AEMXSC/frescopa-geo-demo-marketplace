@@ -2,8 +2,8 @@
 name: frescopa-demo-preflight
 description: "Pre-demo readiness check and connection pre-warm for the Frescopa / Profee GEO demo. Use when the user says \"frescopa preflight\", \"pre-warm the demo\", \"GEO demo check\", \"am I ready for the Frescopa demo\", ideally in a throwaway chat two minutes before going live."
 metadata:
-  author: AEM XSC
-  version: 1.1.0
+  author: Courtney Remekie
+  version: 1.1.1
 ---
 
 # Frescopa demo preflight

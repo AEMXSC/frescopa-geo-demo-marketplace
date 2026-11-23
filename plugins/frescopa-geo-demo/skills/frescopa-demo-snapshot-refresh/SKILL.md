@@ -2,8 +2,8 @@
 name: frescopa-demo-snapshot-refresh
 description: "Refresh the fallback snapshot (last-known-good numbers) for the Frescopa / Profee GEO demo from live Semrush and Adobe Brand Visibility data. Use when the user says \"refresh the frescopa snapshot\", \"update demo fallback numbers\", or preflight reports the snapshot is stale."
 metadata:
-  author: AEM XSC
-  version: 1.1.0
+  author: Courtney Remekie
+  version: 1.1.1
 ---
 
 # Refresh the Frescopa demo snapshot
