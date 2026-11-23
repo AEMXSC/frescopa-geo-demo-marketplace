@@ -2,8 +2,8 @@
 name: frescopa-demo-cleanup
 description: "Clean up the preview pages a presenter created while running the Frescopa / Profee GEO demo. Use when the user says \"clean up my demo pages\", \"frescopa cleanup\", or \"delete my drafts\" for the frescopa26 site."
 metadata:
-  author: AEM XSC
-  version: 1.1.0
+  author: Courtney Remekie
+  version: 1.1.1
 ---
 
 # Clean up my Frescopa demo pages

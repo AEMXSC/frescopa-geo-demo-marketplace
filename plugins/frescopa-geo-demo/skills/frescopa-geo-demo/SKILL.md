@@ -2,8 +2,8 @@
 name: frescopa-geo-demo
 description: "Run the scripted SEO+GEO → governed-page live demo for the AEM XSC Showcase org (Frescopa / Profee brand). Use when the user says \"run the GEO demo\", \"frescopa demo\", \"Frescopa GEO demo\", \"Profee demo\", \"protein coffee page\", \"create a new product for the Frescopa brand\", or wants the scripted four-stage signal → draft → approve → create flow."
 metadata:
-  author: AEM XSC
-  version: 1.1.0
+  author: Courtney Remekie
+  version: 1.1.1
 ---
 
 # Frescopa / Profee GEO Demo (scripted happy path)
